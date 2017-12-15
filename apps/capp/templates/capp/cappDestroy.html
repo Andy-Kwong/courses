@@ -1,0 +1,15 @@
+{% extends 'cappBase.html' %}
+
+{% block title %}
+Courses Delete
+{% endblock title %}
+
+{% block content %}
+<div class="wrapper">
+    <h3>Are you sure you want to delete the following course?</h3>
+    <p>Name: </p>
+    <p>Description: </p>
+    <a href="(% url 'capp_index' %)"><button>No</button></a>
+    <a href="/courses/confirmdestroy/{{ course.id }}"><button>Yes! I want to delete this</button></a>
+</div>
+{% endblock content %}
